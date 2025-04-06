@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>وصفات طعام</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #fff8f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #ff7043;
+            padding: 20px;
+            text-align: center;
+            color: white;
+            font-size: 24px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .recipe-card {
+            background: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            transition: transform 0.2s;
+        }
+
+        .recipe-card:hover {
+            transform: scale(1.03);
+        }
+
+        .recipe-image {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .recipe-title {
+            font-size: 20px;
+            margin: 10px 0 5px;
+        }
+
+        .recipe-desc {
+            font-size: 14px;
+            color: #555;
+        }
+    </style>
+</head>
+
+<body>
+    <header>موقعي لوصفات الطعام</header>
+
+    <div class="container">
+        <div class="recipe-card">
+            <img src="https://via.placeholder.com/300x180" class="recipe-image" alt="وصفة 1">
+            <h3 class="recipe-title">مكرونة بالصلصة الحمراء</h3>
+            <p class="recipe-desc">وصفة سريعة وسهلة للمكرونة مع صلصة طماطم لذيذة.</p>
+        </div>
+
+        <div class="recipe-card">
+            <img src="https://via.placeholder.com/300x180" class="recipe-image" alt="وصفة 2">
+            <h3 class="recipe-title">شوربة العدس</h3>
+            <p class="recipe-desc">شوربة مغذية وسريعة التحضير تناسب الأيام الباردة.</p>
+        </div>
+
+        <!-- أضف المزيد من الوصفات هنا -->
+    </div>
+</body>
+
+</html>
